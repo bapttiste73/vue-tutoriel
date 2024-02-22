@@ -19,6 +19,8 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/ex5">Exercice 5</RouterLink>
         <RouterLink to="/ex6">Exercice 6</RouterLink>
         <RouterLink to="/ex7">Exercice 7</RouterLink>
+        <RouterLink to="/ex8">Exercice 8</RouterLink>
+        <RouterLink to="/MonProjet">Mon Projet</RouterLink>
       </nav>
     </div>
   </header>

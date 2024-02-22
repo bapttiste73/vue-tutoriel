@@ -2,7 +2,7 @@
   <div>
     <div class="title"><h1>Notre premier { { rendu dynamique } }</h1></div>
     <div class="ex">
-      <h1>Hello *nom*</h1>
+      <h1>Hello {{ name }}</h1>
     </div>
   </div>
 </template>
@@ -10,7 +10,7 @@
 <script setup>
 import {ref} from 'vue'
 
-// logique du composant
+const name = ref('World')
 
 </script>
 

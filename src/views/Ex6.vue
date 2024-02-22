@@ -7,18 +7,11 @@
         <button>Ajouter une tâche</button>
       </form>
       <ul>
-        <li>
-          {{ todos[0].text }}
-          <button @click="removeTodo(todos[0])">X</button>
+        <li v-for="todo in todos">
+          {{ todo.text }}
+          <button @click="removeTodo(todo)">X</button>
         </li>
-        <li>
-          {{ todos[1].text }}
-          <button @click="removeTodo(todos[0])">X</button>
-        </li>
-        <li>
-          {{ todos[2].text }}
-          <button @click="removeTodo(todos[0])">X</button>
-        </li>
+
       </ul>
     </div>
   </div>
@@ -36,12 +29,15 @@ const todos = ref([
 ])
 
 function addTodo() {
-  // ...
-  newTodo.value = ''
+  todos.value.push(
+      {id: id++, text: newTodo.value}
+  )
 }
 
 function removeTodo(todo) {
+  todos.value = todos.value.filter(t => t !== todo)
 }
+
 </script>
 
 <style scoped>

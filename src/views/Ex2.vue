@@ -2,7 +2,7 @@
   <div>
     <div class="title"><h1>Le binding et liaison dynamique</h1></div>
     <div class="ex">
-      <h1>Passez moi en rouge</h1> <!-- ajoutez la liaison de la classe dynamique ici -->
+      <h1 :class="titleClass">Passez moi en rouge</h1> <!-- ajoutez la liaison de la classe dynamique ici -->
     </div>
   </div>
 </template>
@@ -10,12 +10,12 @@
 <script setup>
 import {ref} from 'vue'
 
-const titleClass = ref('title');
+const titleClass = ref('titre');
 
 </script>
 
 <style>
-.title {
-
+.titre {
+  color: red;
 }
 </style>

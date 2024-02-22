@@ -47,6 +47,16 @@ const router = createRouter({
       name: 'ex7',
       component: () => import('../views/Ex7.vue')
     },
+    {
+      path: '/ex8',
+      name: 'ex8',
+      component: () => import('../views/Ex8.vue')
+    },
+    {
+      path: '/MonProjet',
+      name: 'MonProjet',
+      component: () => import('../views/MonProjet.vue')
+    },
   ]
 })
 
